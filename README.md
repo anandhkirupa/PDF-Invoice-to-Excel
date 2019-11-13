@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+A Simple program which converts a PDF (Invoice format) into Image, and OCR has been applied to read the text in that image.
 
-You can use the [editor on GitHub](https://github.com/anandhkirupa/PDF-Invoice-to-Excel/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The PDF consists of scanned images.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The converted images from the pdf's are pre-processed and read it in column manner through Pytesseract and saved it in text, later all recognized text is feeded into the Excel file for later use.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anandhkirupa/PDF-Invoice-to-Excel/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Pre-requisites:
+              pip install opencv-python
+              pip install pytesseract
+              pip install image
+              pip install pdf2image
+              pip install math
+              pip install xlwt
+              pip install glob
+              pip install os
+              pip install pytest-shutil
